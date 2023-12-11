@@ -24,7 +24,7 @@ img {
 
   --base-color: #FFA724;
   --base-color-second: #ffffff;
-  --base-color-alt: #ffb444;
+  --base-color-alt: #f49200;
   --title-color: #ffffff;
   --text-color: #000000;
   --text-color-light: #ffffff;
@@ -58,7 +58,7 @@ body {
 
 .button {
   background-color: var(--base-color);
-  color: var(--text-color-light);
+  color: var(--text-color);
   height: 3.5rem;
   display: inline-flex;
   align-items: center;
@@ -93,6 +93,7 @@ body {
 
 .section .subtitle {
   font-size: var(--subtitle-font-size);
+  color: var(--base-color-second);
 }
 
 .section header {
@@ -123,7 +124,7 @@ body {
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
-  margin-left: 4rem;
+  margin-left: 1.5rem;
 }
 
 .logo span {
@@ -186,6 +187,14 @@ nav .menu ul {
   display: none;
 }
 
+
+.lottielogo {
+  display: absolute;
+  top: 18px;
+  left: 16rem;
+
+}
+
 /* Mostrar menu */
 nav.show .menu {
   opacity: 1;
@@ -209,7 +218,9 @@ nav.show .menu ul {
 }
 
 nav.show ul.grid {
-  gap: 4rem;
+  gap: 2rem;
+  font-size: 2rem;
+
 }
 
 /* toggle menu */
@@ -251,17 +262,52 @@ nav.show div.icon-close {
 }
 
 #home .text {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   margin-right: 1.5rem;
   text-align: center;
 }
 
 #home .text h1 {
   margin-bottom: 1rem;
+  margin-top: -2rem;
 }
 
 #home .text p {
   margin-bottom: 2rem;
+  color: var(--base-color-second)
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+    color: var(--base-color)
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /*====  ABOUT ============================ */
@@ -560,3 +606,5 @@ footer .social a:hover {
   }
 }
 /* medium devices: 767 > */
+
+
