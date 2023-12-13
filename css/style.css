@@ -190,8 +190,8 @@ nav .menu ul {
 
 .lottielogo {
   display: absolute;
-  top: 18px;
-  left: 16rem;
+  top: 12px;
+  left: 12rem;
 
 }
 
@@ -236,7 +236,7 @@ nav .icon-close {
 
   position: absolute;
   top: -1.5rem;
-  right: 1.5rem;
+  right: 2.5rem;
 
   transition: 0.2s;
 }
